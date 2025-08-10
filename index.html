@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パックマン英単語ゲーム</title>
+    <!-- Tailwind CSS CDN (開発用: 本番環境ではビルドを推奨) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tone.jsライブラリの読み込み (サウンドエフェクト用) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <!-- カスタムCSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div id="targetWordDisplay" class="mb-4">ターゲット英単語: -</div>
+        <div class="game-info">
+            <div id="scoreDisplay">スコア: 0</div>
+            <div id="livesDisplay">ライフ: 3</div>
+            <div id="highScoreDisplay">ハイスコア: 0</div>
+        </div>
+        <canvas id="gameCanvas" width="500" height="500"></canvas>
+        <div id="messageDisplay" class="mt-4">ゲームを開始するには「スタート」ボタンを押してください。</div>
+        <button id="startButton">スタート</button>
+    </div>
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
